@@ -1,5 +1,4 @@
 package org.smart4j.chapter2.service;
-import javafx.scene.chart.PieChart;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.smart4j.chapter2.helper.DatabaseHelper;
