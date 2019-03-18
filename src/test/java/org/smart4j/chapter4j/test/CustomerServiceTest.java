@@ -15,8 +15,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.sun.org.apache.xalan.internal.utils.SecuritySupport.getResourceAsStream;
-
 public class CustomerServiceTest {
     //CustomerService单元测试
     private final CustomerService customerService;
@@ -27,14 +25,15 @@ public class CustomerServiceTest {
 
     @Before
     public void init() throws Exception {
-        String file = "sql/customer_init.sql";
-        InputStream inputStream = Thread.currentThread().getContextClassLoader().getResourceAsStream(file);
-        getResourceAsStream(file);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-        String sql;
-        while ((sql = reader.readLine()) != null) {
-            DatabaseHelper.executeUpdate(sql);
-        }
+        DatabaseHelper.executeSqlFile("sql/customer_init.sql");
+//        String file = "sql/customer_init.sql";
+//        InputStream inputStream = Thread.currentThread().getContextClassLoader().getResourceAsStream(file);
+//        getResourceAsStream(file);
+//        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+//        String sql;
+//        while ((sql = reader.readLine()) != null) {
+//            DatabaseHelper.executeUpdate(sql);
+//        }
     }
 
     @Test
