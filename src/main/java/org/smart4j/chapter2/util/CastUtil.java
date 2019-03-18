@@ -1,7 +1,5 @@
 package org.smart4j.chapter2.util;
 
-import com.mysql.cj.util.StringUtils;
-
 public final class CastUtil {
     //转为String型
     public static String castString(Object object) {

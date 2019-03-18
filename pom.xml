@@ -71,6 +71,7 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.11</version>
+            <scope>runtime</scope>
         </dependency>
         <!--Apache Commons Lang-->
         <dependency>
@@ -96,7 +97,6 @@
             <artifactId>commons-dbcp</artifactId>
             <version>1.4</version>
         </dependency>
-
         <dependency>
             <groupId>commons-pool</groupId>
             <artifactId>commons-pool</artifactId>
@@ -109,8 +109,5 @@
         </dependency>
     </dependencies>
 
-
     <packaging>war</packaging>
-
-
 </project>

@@ -11,6 +11,7 @@ import java.util.Properties;
 
 public class CustomerService {
     private static final Logger LOGGER= LoggerFactory.getLogger(DatabaseHelper.class);
+
     public static final String DRIVER;
     public static final String URL;
     public static final String USERNAME;
