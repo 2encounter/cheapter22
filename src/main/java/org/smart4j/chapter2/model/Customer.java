@@ -1,6 +1,23 @@
 package org.smart4j.chapter2.model;
 
 public class Customer {
+
+
+    //id
+    private long id;
+    //customer name
+    private String name;
+    //contact
+    private  String contact;
+    //telphone
+    private String telephone;
+    //email
+    private String email;
+    //remark
+    private String remark;
+    //省略getter/setter方法
+
+
     public long getId() {
         return id;
     }
@@ -49,18 +66,6 @@ public class Customer {
         this.remark = remark;
     }
 
-    //id
-    private long id;
-    //customer name
-    private String name;
-    //contact
-    private  String contact;
-    //telphone
-    private String telephone;
-    //email
-    private String email;
-    //remark
-    private String remark;
-    //省略getter/setter方法
+
 }//INSERT INTO `customer` VALUES('1','customer1','Jack','13512345678','jack@gmain.com',NULL);
    // INSERT INTO `customer` VALUES('2','customer2','Rose','13623456789','rose@gmain.com',NULL);
